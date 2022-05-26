@@ -37,6 +37,12 @@
 ## List all pods in a specific namespace
 > kubectl get pods --namespace=kube-system
 
+## List all pods in all namespace
+> kubectl get pods -A
+
+## List all pods in all namespace with more details
+> kubectl get pods -A -o wide
+
 ## List all nodes
 > kubectl get nodes
 
