@@ -46,4 +46,8 @@
 ## List all nodes
 > kubectl get nodes
 
-## 
+## Run a pod with specific image
+> kubectl run k8s-nginx[pod name] --image=nginx[image]
+
+## Access the running pod we nee to use port forwarding. After doing this the pod will be accessible in https://host:6666
+> kubectl port-forward k8s-nginx 6666:80
